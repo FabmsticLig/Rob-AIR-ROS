@@ -1,0 +1,6 @@
+libv4l2: error turning on stream: No space left on device
+ERROR: Pipeline doesn't want to pause.
+ERROR: from element /GstPipeline:pipeline0/GstV4l2Src:v4l2src1: Error starting streaming on device '/dev/v4l/by-id/usb-Microsoft_Microsoft®_LifeCam_HD-5000-video-index0'.
+Additional debug info:
+gstv4l2object.c(2230): gst_v4l2_object_start_streaming (): /GstPipeline:pipeline0/GstV4l2Src:v4l2src1:
+system error: No space left on device

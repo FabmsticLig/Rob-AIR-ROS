@@ -1,0 +1,12 @@
+<launch>
+  <node name="wifi_monitor" pkg="wifi_monitor" type="wifi_monitor.py"/>
+  <node name="body" pkg="rosserial_python" type="serial_node.py" output="screen">
+    <param name="port" value="/dev/serial/by-id/usb-Arduino__www.arduino.cc__0042_753353134373518012E1-if00"/>
+  </node>
+  <node name="head" pkg="rosserial_python" type="serial_node.py" output="screen">
+    <param name="port" value="/dev/serial/by-id/usb-Arduino__www.arduino.cc__0042_75335313437351805162-if00"/>
+  </node>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+     <arg name="port" value="9090"/>
+  </include>
+</launch>

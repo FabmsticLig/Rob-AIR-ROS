@@ -1,0 +1,4 @@
+<launch>
+  <node name="node_obstacle_avoidance" pkg="obstacle_avoidance" type="main_obstacle_avoidance"/>
+  <node name="node_suivi" pkg="suivi" type="tracker"/>
+</launch>
